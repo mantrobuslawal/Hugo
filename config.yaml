@@ -2,7 +2,6 @@ baseURL: http://example.org/
 languageCode: en-us 
 title: Acme Corporation 
 theme: Eclectic
-enableEmoji: true 
 author: 
   facebook: "https://facebook.com/example" 
   twitter: "https://twitter.com/example" 
@@ -22,10 +21,6 @@ menu:
       name: Contact 
       url: /contact 
       weight: 200
-
-markup:
-  highlight:
-    lineNos: true
 
 params: 
   color: "#4f46e5"
@@ -47,3 +42,12 @@ params:
     recentCount: 7
   - title: Contact Us
     contact: true
+
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    lineNos: true
+enableEmoji: true
