@@ -1,7 +1,8 @@
 baseURL: http://example.org/
 languageCode: en-us 
 title: Acme Corporation 
-theme: Eclectic 
+theme: Eclectic
+enableEmoji: true 
 author: 
   facebook: "https://facebook.com/example" 
   twitter: "https://twitter.com/example" 
@@ -20,7 +21,12 @@ menu:
     - identifier: contact 
       name: Contact 
       url: /contact 
-      weight: 200 
+      weight: 200
+
+markup:
+  highlight:
+    lineNos: true
+
 params: 
   color: "#4f46e5"
   copyright: "Copyright &copy; 2022 Acme Corporation.
